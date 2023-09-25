@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 import Interfaces.Exercicios.Services.ServicosContratos;
+import Interfaces.Exercicios.Services.ServicosPaypal;
 
 public class Program {
 
@@ -32,7 +33,7 @@ public class Program {
 		System.out.println("Entre com o número de parcelas; ");
 		int n = sc.nextInt();
 		
-		ServicosContratos servicosContratos = new ServicosContratos(null);
+		ServicosContratos servicosContratos = new ServicosContratos(new ServicosPaypal());
 		
 		servicosContratos.processosContratos(obj, n);
 		

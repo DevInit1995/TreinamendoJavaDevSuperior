@@ -15,8 +15,18 @@ public class ServicosContratos {
 	}
 	
 	public void processosContratos(Contratos contratos, int meses) {
-		contratos.getParcelas().add(new Parcelas(LocalDate.of(2018,  7,  25), 206.04));
-		contratos.getParcelas().add(new Parcelas(LocalDate.of(2018, 8, 25), 208.08));
+		double cotaBasica = contratos.getTotalValor() / meses;
+		
+		for(int i = 1; i <= meses; i++) {
+			LocalDate dadosDevidos = contratos.getData().plusMonths(i);
+			
+			double interesse = servicosPagamentosOnline.taxaPagamento(cotaBasica + i);
+			
+			double taxa = servicosPagamentosOnline.taxaPagamento(cotaBasica + interesse);
+			
+			double cota = cotaBasica + interesse + taxa;
+			
+			contratos.getParcelas().add(new Parcelas(dadosDevidos, cota));
+		}	
 	}	
-	
 }
