@@ -12,9 +12,4 @@ public class BrasilServicosJuros implements ITaxaService{
 	public double getTaxaJuro() {
 		return taxaJuro;
 	}
-
-	public void setTaxaJuros(double taxaJuros) {
-		this.taxaJuro = taxaJuros;
-	}
-	
 }
