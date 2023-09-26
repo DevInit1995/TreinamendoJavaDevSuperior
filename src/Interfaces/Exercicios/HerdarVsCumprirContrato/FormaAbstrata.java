@@ -1,4 +1,4 @@
-package Interfaces.Exercicios.HerdarVsCumprirContrato;
+/*package Interfaces.Exercicios.HerdarVsCumprirContrato;
 
 public class FormaAbstrata implements Forma {
 
@@ -25,3 +25,4 @@ public class FormaAbstrata implements Forma {
 	
 	
 }
+*/

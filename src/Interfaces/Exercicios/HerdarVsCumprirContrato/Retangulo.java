@@ -1,4 +1,4 @@
-package Interfaces.Exercicios.HerdarVsCumprirContrato;
+/*package Interfaces.Exercicios.HerdarVsCumprirContrato;
 
 public class Retangulo extends FormaAbstrata{
 
@@ -35,3 +35,4 @@ public class Retangulo extends FormaAbstrata{
 	
 	
 }
+*/

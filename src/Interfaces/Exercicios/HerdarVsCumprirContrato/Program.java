@@ -1,4 +1,4 @@
-package Interfaces.Exercicios.HerdarVsCumprirContrato;
+/*package Interfaces.Exercicios.HerdarVsCumprirContrato;
 
 public class Program {
 
@@ -15,3 +15,4 @@ public class Program {
 	}
 
 }
+*/

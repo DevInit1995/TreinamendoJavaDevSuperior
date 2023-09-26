@@ -1,4 +1,4 @@
-package Interfaces.Exercicios.HerdarVsCumprirContrato;
+/*package Interfaces.Exercicios.HerdarVsCumprirContrato;
 
 public class Circulo extends FormaAbstrata {
 
@@ -22,3 +22,4 @@ public class Circulo extends FormaAbstrata {
 		this.radius = radius;
 	}
 }
+*/

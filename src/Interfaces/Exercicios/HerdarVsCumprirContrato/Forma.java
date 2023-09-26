@@ -1,7 +1,7 @@
-package Interfaces.Exercicios.HerdarVsCumprirContrato;
+package Interfaces.Exercicios.HerdarVSCumprirContrato;
 
 public interface Forma {
-	
+	 
 	 double area();
 	
 }
