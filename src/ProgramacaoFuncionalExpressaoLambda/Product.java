@@ -30,14 +30,14 @@ public class Product {
 		this.price = price;
 	}
 
-	public static boolean staticProductPredicate(Product p) {
-		return p.getPrice() >= 100.0;
+	public static void staticPriceUpdate(Product p) {
+		 p.setPrice(p.getPrice() * 1.1);
 	}
 	
-	public boolean nonStaticProductPredicate() {
-		return price >= 100.0;
+	public void nonStaticPriceUpdate() {
+		price = price * 1.1;
 	}
-	
+
 	@Override
 	public String toString() {
 		return name + ", " + String.format("%.2f", price);

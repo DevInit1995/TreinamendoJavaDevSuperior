@@ -2,7 +2,7 @@ package ProgramacaoFuncionalExpressaoLambda;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
+import java.util.function.Consumer;
 
 public class Program {
 
@@ -14,13 +14,12 @@ public class Program {
 		list.add(new Product("Mouse", 50.00));
 		list.add(new Product("Tablet", 350.50));
 		list.add(new Product("HD Case", 80.90));
+
+		double factor = 1.1;
 		
-		double min = 100.0;
+		list.forEach(p -> p.setPrice(p.getPrice() * factor));
+
+		list.forEach(System.out::println);
 		
-		list.removeIf(p -> p.getPrice() >= min);
-		
-		for(Product p : list) {
-			System.out.println(p);
-		}
 	}
 }
