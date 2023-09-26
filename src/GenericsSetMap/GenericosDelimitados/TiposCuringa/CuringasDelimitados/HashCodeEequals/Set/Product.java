@@ -3,7 +3,9 @@ package GenericsSetMap.GenericosDelimitados.TiposCuringa.CuringasDelimitados.Has
 import java.util.Objects;
 
 // aula 244. Como Set testa igualdade
-public class Product {
+// aula 245. Como TreeSet compara os elementos
+
+public class Product implements Comparable<Product> {
 
 	private String name;
 	private Double price;
@@ -58,5 +60,15 @@ public class Product {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [name = " + name + ", price = " + price + "]";
+	}
+	
+	@Override
+	public int compareTo(Product other) {
+		return name.toUpperCase().compareTo(other.getName().toUpperCase());
 	}
 }
